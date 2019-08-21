@@ -1,7 +1,7 @@
 name: root
 dependencies:
   # bind notebook version (compatibility to pgcontents)
-  - notebook = 4
+  - notebook = 6
   - ipywidgets
   - requests
   # bind ipython version (compatibility to pgcontents)
@@ -17,6 +17,7 @@ dependencies:
   - six
   - sqlalchemy
   - nose
+  - pip
   - pip:
     - pgcontents
     - git+git://github.com/ipython-contrib/jupyter_contrib_nbextensions.git
