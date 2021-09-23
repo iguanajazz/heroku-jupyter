@@ -1,5 +1,6 @@
 name: root
 dependencies:
+  - pip
   # bind notebook version (compatibility to pgcontents)
   - notebook = 6
   - ipywidgets
@@ -19,5 +20,5 @@ dependencies:
   - nose
   - pip
   - pip:
-    - pgcontents
+    - pgcontents==0.5.3
     - git+git://github.com/ipython-contrib/jupyter_contrib_nbextensions.git

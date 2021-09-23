@@ -1,0 +1,18 @@
+name: root
+dependencies:
+  - pip
+  - notebook
+  - ipywidgets
+  - requests
+  - ipython
+  - tornado
+  # get dependencies for pgcontents
+  - sqlalchemy
+  - alembic
+  - click
+  - cryptography 
+  - six
+  - pip:
+    - pgcontents
+    - psycopg2-binary
+    - git+git://github.com/ipython-contrib/jupyter_contrib_nbextensions.git

@@ -1,5 +1,15 @@
 # heroku-jupyter
 
+*Currently none of the configurations work properly.
+I am not able to figure out a working environment.yml.
+Sad enough older configurations do not work, as deprecated
+packages have been removed from package repositories.*
+
+*Instead of using anaconda, it might be more stable to create
+a docker container to run in heroku. See as an example
+[heroku-debian-jupyter](https://github.com/pl31/heroku-debian-jupyter),
+but there is still no support for a heroku deploy button from heroku*
+
 Use this application to deploy [Jupyter Notebook](https://jupyter.org/) to
 heroku or CloudFoundry. If a postgres database is available,
 [pgcontents](https://github.com/quantopian/pgcontents) is used as notebook
@@ -76,4 +86,5 @@ dependencies:
 | Deployment | Features | Description |
 | ---------- | -------- | ----------- |
 | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?env[ENVIRONMENT_YML]=environments/default.yml) | Python3, IPython5 | Default Environment
+| [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?env[ENVIRONMENT_YML]=environments/latest.yml) | Python3 | Latest, no version binding
 | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?env[ENVIRONMENT_YML]=environments/multi_kernel.yml&env[ADDITIONAL_ENVIRONMENT_YML]=environments/kernel/python2/python2.yml) | Python3, IPython5 + Python2 | Default Environment + Python2
